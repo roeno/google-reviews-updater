@@ -2,7 +2,7 @@ import fetch from "node-fetch";
 import fs from "fs";
 
 const apiKey = process.env.GOOGLE_API_KEY;
-const placeId = "IDE_JÖN_A_TE_PLACE_ID"; // ezt majd kicseréljük a sajátodra
+const placeId = "ChIJ26WO-8_dQUcRtBFg3oBEkgU"; // ezt majd kicseréljük a sajátodra
 
 const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=reviews,rating,user_ratings_total&key=${apiKey}`;
 
