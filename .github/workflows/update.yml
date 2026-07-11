@@ -2,7 +2,7 @@ name: Update Google Reviews
 
 on:
   schedule:
-    - cron: "0 * * * *"   # óránként fut
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -11,25 +11,25 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Install Node
-        uses: actions/setup-node@v3
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install dependencies
         run: npm install axios
 
-
       - name: Fetch Google Reviews
-        run: |
-          node fetch.js
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: node fetch.js
 
       - name: Commit and push
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add reviews.json
-          git commit -m "Update reviews"
+          git commit -m "Update reviews" || echo "No changes to commit"
           git push
