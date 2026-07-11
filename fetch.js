@@ -12,9 +12,9 @@ async function update() {
 
     const res = await axios.get(url);
     console.log("HTTP státusz:", res.status);
+    console.log("Google API válasz:", JSON.stringify(res.data, null, 2));
 
     const data = res.data;
-    console.log("Google API válasz:", JSON.stringify(data, null, 2));
 
     if (data.error_message) {
       console.error("Google API hiba:", data.error_message);
@@ -34,4 +34,3 @@ async function update() {
 }
 
 update();
-
