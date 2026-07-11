@@ -26,10 +26,10 @@ jobs:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
         run: node fetch.js
 
-    - name: Commit and push
-      run: |
-        git config user.name "GitHub Actions"
-        git config user.email "actions@github.com"
-        git add reviews.json
-        git commit -m "Update reviews" || echo "No changes to commit"
-        git push || echo "No changes to push"
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add reviews.json
+          git commit -m "Update reviews" || echo "No changes to commit"
+          git push || echo "No changes to push"
