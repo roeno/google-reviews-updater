@@ -8,19 +8,30 @@ const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${
 
 async function update() {
   try {
+    console.log("Lekérés indul:", url);
+
     const res = await axios.get(url);
+    console.log("HTTP státusz:", res.status);
+
     const data = res.data;
+    console.log("Google API válasz:", JSON.stringify(data, null, 2));
+
+    if (data.error_message) {
+      console.error("Google API hiba:", data.error_message);
+      return;
+    }
 
     if (!data.result || !data.result.reviews) {
-      console.error("Nincs elérhető értékelés.");
+      console.error("Nincs elérhető értékelés a Google API válaszban.");
       return;
     }
 
     fs.writeFileSync("reviews.json", JSON.stringify(data.result.reviews, null, 2));
     console.log("Értékelések frissítve.");
   } catch (err) {
-    console.error("Hiba történt:", err);
+    console.error("Axios hiba:", err.toString());
   }
 }
 
 update();
+
