@@ -9,7 +9,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     
-    # ITT A Javítás: Engedélyezni kell az írási jogot a GITHUB_TOKEN-nek
+    # Biztosítjuk az írási jogot a repóhoz
     permissions:
       contents: write
 
@@ -23,12 +23,7 @@ jobs:
           node-version: 22
 
       - name: Install dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+        run: npm install axios
 
       - name: Fetch Google Reviews
         env:
@@ -40,5 +35,4 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add reviews.json
-          git commit -m "Update reviews" || echo "No changes to commit"
-          git push
+          git diff --staged --quiet || (git commit -m "Update Google reviews" && git push)
