@@ -21,13 +21,20 @@ async function update() {
       return;
     }
 
-    if (!data.result || !data.result.reviews) {
-      console.error("Nincs elérhető értékelés a Google API válaszban.");
+    if (!data.result) {
+      console.error("Nincs eredmény a Google API válaszban.");
       return;
     }
 
-    fs.writeFileSync("reviews.json", JSON.stringify(data.result.reviews, null, 2));
-    console.log("Értékelések frissítve.");
+    // Összeállítunk egy egységes objektumot a ratinggel, a darabszámmal és a véleményekkel
+    const outputData = {
+      rating: data.result.rating || 0,
+      user_ratings_total: data.result.user_ratings_total || 0,
+      reviews: data.result.reviews || []
+    };
+
+    fs.writeFileSync("reviews.json", JSON.stringify(outputData, null, 2));
+    console.log("Értékelések és statisztikák sikeresen frissítve a reviews.json-ben.");
   } catch (err) {
     console.error("Axios hiba:", err.toString());
   }
