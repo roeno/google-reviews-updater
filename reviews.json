@@ -1,1 +1,66 @@
-[]
+{
+  "rating": 4.7,
+  "user_ratings_total": 66,
+  "reviews": [
+    {
+      "author_name": "Peter Prager",
+      "author_url": "https://www.google.com/maps/contrib/116175479286973740234/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXLqKHP0010ulA4iSrrqIqk7mp3_H8c6mw952ahhbGndG6QyFyqgA=s128-c0x00000000-cc-rp-mo-ba3",
+      "rating": 5,
+      "relative_time_description": "3 years ago",
+      "text": "A great professional service, specialized for service works of modern jaguar cars .Fast  service with solid prices.",
+      "time": 1686758794,
+      "translated": false
+    },
+    {
+      "author_name": "Juraj Zvara",
+      "author_url": "https://www.google.com/maps/contrib/106460186570479218369/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLcEbp4yTf5V-YHE0wIUoDPg4jx57Frpar-FRxy4Wxxa2wfKA=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "relative_time_description": "6 years ago",
+      "text": "Helped me a LOT, thanks!",
+      "time": 1569595267,
+      "translated": false
+    },
+    {
+      "author_name": "Bence Pányoki",
+      "author_url": "https://www.google.com/maps/contrib/108152305852000605204/reviews",
+      "language": "en-US",
+      "original_language": "hu",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWEcRVAaTlg1cp0S_quotTA5OT1WhlBUHzFiRGEXubigpuzJP0k=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "relative_time_description": "11 months ago",
+      "text": "Correct, comprehensive information and reliable repair, I can only recommend it.",
+      "time": 1754777904,
+      "translated": true
+    },
+    {
+      "author_name": "Balázs Szabados",
+      "author_url": "https://www.google.com/maps/contrib/116209890017011738783/reviews",
+      "language": "en-US",
+      "original_language": "hu",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUo2u_IzC1EmP74vQrNIAiz4EH93kHeDuHZkxvRF_2gHN36CVMr=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "relative_time_description": "2 years ago",
+      "text": "My car had been to 4 service stations before with the same problem, no one could give me a specific answer. Here they knew the solution almost immediately, they were kind and explained everything. It's worth the price, they don't announce the costs afterwards, they agree on everything with the customer. I can only recommend them, even though I traveled 200km to them, but after this, if fate allows, I will definitely come back!",
+      "time": 1698851155,
+      "translated": true
+    },
+    {
+      "author_name": "Csaba Szklenár",
+      "author_url": "https://www.google.com/maps/contrib/103252319008115251607/reviews",
+      "language": "en-US",
+      "original_language": "hu",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUujoMm84K3Aouat44c7-mxPlHPJ7LG6tXNPKowUgttA32WANJk=s128-c0x00000000-cc-rp-mo-ba3",
+      "rating": 5,
+      "relative_time_description": "4 years ago",
+      "text": "I can only recommend them. Everything went well, the car was excellent, they kept me informed about everything while the car was there. I think their price is also completely fair 🙂",
+      "time": 1645812845,
+      "translated": true
+    }
+  ]
+}
