@@ -27,18 +27,6 @@
       "translated": false
     },
     {
-      "author_name": "Balázs Szabados",
-      "author_url": "https://www.google.com/maps/contrib/116209890017011738783/reviews",
-      "language": "en-US",
-      "original_language": "hu",
-      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUo2u_IzC1EmP74vQrNIAiz4EH93kHeDuHZkxvRF_2gHN36CVMr=s128-c0x00000000-cc-rp-mo",
-      "rating": 5,
-      "relative_time_description": "2 years ago",
-      "text": "My car had been to 4 service stations before with the same problem, no one could give me a specific answer. Here they knew the solution almost immediately, they were kind and explained everything. It's worth the price, they don't announce the costs afterwards, they agree on everything with the customer. I can only recommend them, even though I traveled 200km to them, but after this, if fate allows, I will definitely come back!",
-      "time": 1698851155,
-      "translated": true
-    },
-    {
       "author_name": "Bence Pányoki",
       "author_url": "https://www.google.com/maps/contrib/108152305852000605204/reviews",
       "language": "en-US",
@@ -48,6 +36,18 @@
       "relative_time_description": "a year ago",
       "text": "Correct, comprehensive information and reliable repair, I can only recommend it.",
       "time": 1754777904,
+      "translated": true
+    },
+    {
+      "author_name": "Balázs Szabados",
+      "author_url": "https://www.google.com/maps/contrib/116209890017011738783/reviews",
+      "language": "en-US",
+      "original_language": "hu",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUo2u_IzC1EmP74vQrNIAiz4EH93kHeDuHZkxvRF_2gHN36CVMr=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "relative_time_description": "2 years ago",
+      "text": "My car had been to 4 service stations before with the same problem, no one could give me a specific answer. Here they knew the solution almost immediately, they were kind and explained everything. It's worth the price, they don't announce the costs afterwards, they agree on everything with the customer. I can only recommend them, even though I traveled 200km to them, but after this, if fate allows, I will definitely come back!",
+      "time": 1698851155,
       "translated": true
     },
     {
